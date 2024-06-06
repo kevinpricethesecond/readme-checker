@@ -4,7 +4,14 @@ import requests
 import argparse
 import json
 
-docker_url = 'https://hub.docker.com/v2/'
+docker_url = 'https://hub.docker.com/v2'
+repo_base_url = 'https://hub.docker.com/repository/docker'
+namespace = None
+response = {
+    "count": 0,
+    "names": [],
+    "repos": []
+}
 
 def get_repo_tags(repo):
     pass
@@ -31,27 +38,35 @@ def main(username, password, namespace):
     token = auth(username, password)
     next_page = None
     repos = []
+    count = 0
+    names = []
     try:
         resp = json.loads(json.dumps(requests.get(f'{docker_url}/namespaces/{namespace}/repositories').json()))
     except AssertionError as e:
         pass
     except Exception as e:
         print(f'Uncaught exception getting repos:: {e}')
-
+    check_for_desc(resp['results'])
     next_page = resp['next']
     while next_page:
         resp = json.loads(json.dumps(requests.get(next_page).json()))
-        for repo in resp['results']:
-            repos.append(repo)
+        check_for_desc(resp['results'])
         next_page = resp['next']
-    print(json.dumps(repos))
+    print(response)
 
-
+def check_for_desc(results):
+    for repo in results:
+            if repo['description'] == '':
+                repo_name = repo['name']
+                repo_url = f'{repo_base_url}/{namespace}/{repo_name}'
+                response['count'] = response['count'] + 1
+                response['names'].append(f'"{repo_name}": "{repo_url}"')
+                response['repos'].append(repo)
 
 if __name__ == '__main__':
     username = None
     password = None
-    namespace = None
+    # namespace is global
     p = argparse.ArgumentParser()
     p.add_argument('--username', dest='username')
     p.add_argument('--password', dest='password')
