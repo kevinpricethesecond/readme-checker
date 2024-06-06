@@ -27,13 +27,12 @@ def auth(username, password):
         print(f'Unknown error authenticating to Docker -- {e}')
     return token
 
-def main(username, password):
+def main(username, password, namespace):
     token = auth(username, password)
     next_page = None
     repos = []
     try:
-        resp = json.loads(json.dumps(requests.get(f'{docker_url}/namespaces/tapis/repositories').json()))
-        # resp = json.loads(json.dumps(requests.get(f'{docker_url}/namespaces/kevinpricethesecond/repositories').json()))
+        resp = json.loads(json.dumps(requests.get(f'{docker_url}/namespaces/{namespace}/repositories').json()))
     except AssertionError as e:
         pass
     except Exception as e:
@@ -52,10 +51,14 @@ def main(username, password):
 if __name__ == '__main__':
     username = None
     password = None
+    namespace = None
     p = argparse.ArgumentParser()
     p.add_argument('--username', dest='username')
     p.add_argument('--password', dest='password')
+    p.add_argument('--namespace', dest='namespace')
     args = p.parse_args()
     username = args.username
     password = args.password
-    main(username, password)
+    namespace = args.namespace if args.namespace else username
+    print(f'checking for repos in {namespace}')
+    main(username, password, namespace)
