@@ -7,6 +7,7 @@ import json
 docker_url = 'https://hub.docker.com/v2'
 repo_base_url = 'https://hub.docker.com/repository/docker'
 namespace = None
+filename = None
 response = {
     "count": 0,
     "names": [],
@@ -53,6 +54,10 @@ def main(username, password, namespace):
         check_for_desc(resp['results'])
         next_page = resp['next']
     print(response)
+    print(filename)
+    if filename:
+        f = open(filename, 'w')
+        f.write(json.dumps(response))
 
 def check_for_desc(results):
     for repo in results:
@@ -71,9 +76,11 @@ if __name__ == '__main__':
     p.add_argument('--username', dest='username')
     p.add_argument('--password', dest='password')
     p.add_argument('--namespace', dest='namespace')
+    p.add_argument('--file', dest='filename')
     args = p.parse_args()
     username = args.username
     password = args.password
     namespace = args.namespace if args.namespace else username
+    filename = args.filename if args.filename else None
     print(f'checking for repos in {namespace}')
     main(username, password, namespace)

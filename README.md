@@ -1,8 +1,8 @@
 # readme-checker
 Gets a list of repos in dockerhub without a description. The repos must be public to be found by the script and a username and password must be passed as params. If no `--namespace` param is provided, it is assumed to be the username.
 
-Usage:
-`$ python3 readme-checker.py --username <<dockerhub username>> --password <<dockerhub password>> --namespace <<dockerhub namespace>>`
+Quickstart:
+`$ python3 readme-checker.py --username <<dockerhub username>> --password <<dockerhub password>> --namespace <<dockerhub namespace>> --file <</path/to/file>>`
 ```
 {
     "count": count,
@@ -29,3 +29,9 @@ Usage:
 }
 
 ```
+
+Options
+--username Dockerhub username *required
+--password Docker hub password *required
+--namespace The dockerhub namespace to search. Defaults to the username *optional
+--file Path to the output file. Defaults to None. If this is not provided, output will just print to console. *optional
