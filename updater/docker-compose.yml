@@ -1,0 +1,11 @@
+---
+
+services:
+  pushrm:
+    container_name: pushrm
+    image: chko/docker-pushrm
+    env_file: 
+      - ../../.env
+    volumes:
+      - ./:/myvol
+    entrypoint: ["/bin/sh", "-c", "/docker-pushrm"]
