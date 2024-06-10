@@ -1,3 +1,7 @@
 {
-    "docker.io/tapis/globus-proxy": "https://raw.githubusercontent.com/tapis-project/globus-proxy/dev/README.md"
+    "bigoltest": {
+        "dockerhub_target": "docker.io/kevinpricethesecond/bigoltest",
+        "readme_location": "https://raw.githubusercontent.com/tapis-project/globus-proxy/dev/README.md",
+        "short_desc": "big ol' test"
+    }
 }
