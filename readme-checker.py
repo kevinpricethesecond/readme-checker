@@ -53,7 +53,7 @@ def main(username, password, namespace):
         resp = json.loads(json.dumps(requests.get(next_page).json()))
         check_for_desc(resp['results'])
         next_page = resp['next']
-    print(response)
+    print(json.dumps(response))
     print(filename)
     if filename:
         f = open(filename, 'w')

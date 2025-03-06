@@ -1,7 +1,667 @@
 {
-    "bigoltest": {
-        "dockerhub_target": "docker.io/kevinpricethesecond/bigoltest",
-        "readme_location": "https://raw.githubusercontent.com/tapis-project/globus-proxy/dev/README.md",
-        "short_desc": "big ol' test"
+    "flaskbase": {
+        "dockerhub_target": "docker.io/tapis/flaskbase",
+        "readme_location": "",
+        "short_desc": ""
+    },
+    "tokens-api": {
+        "dockerhub_target": "docker.io/tapis/tokens-api",
+        "readme_location": "",
+        "short_desc": ""
+    },
+    "swagger-cli": {
+        "dockerhub_target": "docker.io/tapis/swagger-cli",
+        "readme_location": "",
+        "short_desc": ""
+    },
+    "tapis-files": {
+        "dockerhub_target": "docker.io/tapis/tapis-files",
+        "readme_location": "",
+        "short_desc": ""
+    },
+    "securityapi": {
+        "dockerhub_target": "docker.io/tapis/securityapi",
+        "readme_location": "",
+        "short_desc": ""
+    },
+    "securitymigrate": {
+        "dockerhub_target": "docker.io/tapis/securitymigrate",
+        "readme_location": "",
+        "short_desc": ""
+    },
+    "tenants-api": {
+        "dockerhub_target": "docker.io/tapis/tenants-api",
+        "readme_location": "",
+        "short_desc": ""
+    },
+    "tenants-api-migrations": {
+        "dockerhub_target": "docker.io/tapis/tenants-api-migrations",
+        "readme_location": "",
+        "short_desc": ""
+    },
+    "systems": {
+        "dockerhub_target": "docker.io/tapis/systems",
+        "readme_location": "",
+        "short_desc": ""
+    },
+    "dynatapy": {
+        "dockerhub_target": "docker.io/tapis/dynatapy",
+        "readme_location": "",
+        "short_desc": ""
+    },
+    "pysdk-tests": {
+        "dockerhub_target": "docker.io/tapis/pysdk-tests",
+        "readme_location": "",
+        "short_desc": ""
+    },
+    "tenants-api-tests": {
+        "dockerhub_target": "docker.io/tapis/tenants-api-tests",
+        "readme_location": "",
+        "short_desc": ""
+    },
+    "tapis-meta-rh-security": {
+        "dockerhub_target": "docker.io/tapis/tapis-meta-rh-security",
+        "readme_location": "",
+        "short_desc": ""
+    },
+    "tokens-api-tests": {
+        "dockerhub_target": "docker.io/tapis/tokens-api-tests",
+        "readme_location": "",
+        "short_desc": ""
+    },
+    "streams-api": {
+        "dockerhub_target": "docker.io/tapis/streams-api",
+        "readme_location": "",
+        "short_desc": ""
+    },
+    "tapis-meta-rh-server": {
+        "dockerhub_target": "docker.io/tapis/tapis-meta-rh-server",
+        "readme_location": "",
+        "short_desc": ""
+    },
+    "authenticator-migrations": {
+        "dockerhub_target": "docker.io/tapis/authenticator-migrations",
+        "readme_location": "",
+        "short_desc": ""
+    },
+    "authenticator": {
+        "dockerhub_target": "docker.io/tapis/authenticator",
+        "readme_location": "",
+        "short_desc": ""
+    },
+    "tapis-meta-rh-core": {
+        "dockerhub_target": "docker.io/tapis/tapis-meta-rh-core",
+        "readme_location": "",
+        "short_desc": ""
+    },
+    "metaapi": {
+        "dockerhub_target": "docker.io/tapis/metaapi",
+        "readme_location": "",
+        "short_desc": ""
+    },
+    "securityadmin": {
+        "dockerhub_target": "docker.io/tapis/securityadmin",
+        "readme_location": "",
+        "short_desc": ""
+    },
+    "jmeter": {
+        "dockerhub_target": "docker.io/tapis/jmeter",
+        "readme_location": "",
+        "short_desc": ""
+    },
+    "pearc20-demo-actor": {
+        "dockerhub_target": "docker.io/tapis/pearc20-demo-actor",
+        "readme_location": "",
+        "short_desc": ""
+    },
+    "authenticator-tests": {
+        "dockerhub_target": "docker.io/tapis/authenticator-tests",
+        "readme_location": "",
+        "short_desc": ""
+    },
+    "add_token_roles": {
+        "dockerhub_target": "docker.io/tapis/add_token_roles",
+        "readme_location": "",
+        "short_desc": ""
+    },
+    "tapis-prometheus-exporter": {
+        "dockerhub_target": "docker.io/tapis/tapis-prometheus-exporter",
+        "readme_location": "",
+        "short_desc": ""
+    },
+    "jobsapi": {
+        "dockerhub_target": "docker.io/tapis/jobsapi",
+        "readme_location": "",
+        "short_desc": ""
+    },
+    "jobsmigrate": {
+        "dockerhub_target": "docker.io/tapis/jobsmigrate",
+        "readme_location": "",
+        "short_desc": ""
+    },
+    "tapis-files-workers": {
+        "dockerhub_target": "docker.io/tapis/tapis-files-workers",
+        "readme_location": "",
+        "short_desc": ""
+    },
+    "apps": {
+        "dockerhub_target": "docker.io/tapis/apps",
+        "readme_location": "",
+        "short_desc": ""
+    },
+    "pgrest-api": {
+        "dockerhub_target": "docker.io/tapis/pgrest-api",
+        "readme_location": "",
+        "short_desc": ""
+    },
+    "mqe": {
+        "dockerhub_target": "docker.io/tapis/mqe",
+        "readme_location": "",
+        "short_desc": ""
+    },
+    "tapis-files-migrations": {
+        "dockerhub_target": "docker.io/tapis/tapis-files-migrations",
+        "readme_location": "",
+        "short_desc": ""
+    },
+    "tapis-notifications-api": {
+        "dockerhub_target": "docker.io/tapis/tapis-notifications-api",
+        "readme_location": "",
+        "short_desc": ""
+    },
+    "tapis-notifications-workers": {
+        "dockerhub_target": "docker.io/tapis/tapis-notifications-workers",
+        "readme_location": "",
+        "short_desc": ""
+    },
+    "tapis-notifications-migrations": {
+        "dockerhub_target": "docker.io/tapis/tapis-notifications-migrations",
+        "readme_location": "",
+        "short_desc": ""
+    },
+    "testapps": {
+        "dockerhub_target": "docker.io/tapis/testapps",
+        "readme_location": "",
+        "short_desc": ""
+    },
+    "jobsworker": {
+        "dockerhub_target": "docker.io/tapis/jobsworker",
+        "readme_location": "",
+        "short_desc": ""
+    },
+    "mongodb-backup": {
+        "dockerhub_target": "docker.io/tapis/mongodb-backup",
+        "readme_location": "",
+        "short_desc": ""
+    },
+    "mongo-singlenode": {
+        "dockerhub_target": "docker.io/tapis/mongo-singlenode",
+        "readme_location": "",
+        "short_desc": ""
+    },
+    "mongobackup": {
+        "dockerhub_target": "docker.io/tapis/mongobackup",
+        "readme_location": "",
+        "short_desc": ""
+    },
+    "mongotools": {
+        "dockerhub_target": "docker.io/tapis/mongotools",
+        "readme_location": "",
+        "short_desc": ""
+    },
+    "sleepr": {
+        "dockerhub_target": "docker.io/tapis/sleepr",
+        "readme_location": "",
+        "short_desc": ""
+    },
+    "word_stats.pipelines": {
+        "dockerhub_target": "docker.io/tapis/word_stats.pipelines",
+        "readme_location": "",
+        "short_desc": ""
+    },
+    "keys-mgt": {
+        "dockerhub_target": "docker.io/tapis/keys-mgt",
+        "readme_location": "",
+        "short_desc": ""
+    },
+    "exporter": {
+        "dockerhub_target": "docker.io/tapis/exporter",
+        "readme_location": "",
+        "short_desc": ""
+    },
+    "meta-bulk": {
+        "dockerhub_target": "docker.io/tapis/meta-bulk",
+        "readme_location": "",
+        "short_desc": ""
+    },
+    "pipelines": {
+        "dockerhub_target": "docker.io/tapis/pipelines",
+        "readme_location": "",
+        "short_desc": ""
+    },
+    "jupyter": {
+        "dockerhub_target": "docker.io/tapis/jupyter",
+        "readme_location": "",
+        "short_desc": ""
+    },
+    "img-classify": {
+        "dockerhub_target": "docker.io/tapis/img-classify",
+        "readme_location": "",
+        "short_desc": ""
+    },
+    "site-router-api": {
+        "dockerhub_target": "docker.io/tapis/site-router-api",
+        "readme_location": "",
+        "short_desc": ""
+    },
+    "files": {
+        "dockerhub_target": "docker.io/tapis/files",
+        "readme_location": "",
+        "short_desc": ""
+    },
+    "files-workers": {
+        "dockerhub_target": "docker.io/tapis/files-workers",
+        "readme_location": "",
+        "short_desc": ""
+    },
+    "notifications": {
+        "dockerhub_target": "docker.io/tapis/notifications",
+        "readme_location": "",
+        "short_desc": ""
+    },
+    "flaskbase-plugins": {
+        "dockerhub_target": "docker.io/tapis/flaskbase-plugins",
+        "readme_location": "",
+        "short_desc": ""
+    },
+    "deployer-input-gen": {
+        "dockerhub_target": "docker.io/tapis/deployer-input-gen",
+        "readme_location": "",
+        "short_desc": ""
+    },
+    "notifications-dispatcher": {
+        "dockerhub_target": "docker.io/tapis/notifications-dispatcher",
+        "readme_location": "",
+        "short_desc": ""
+    },
+    "deployer": {
+        "dockerhub_target": "docker.io/tapis/deployer",
+        "readme_location": "",
+        "short_desc": ""
+    },
+    "workflows-api": {
+        "dockerhub_target": "docker.io/tapis/workflows-api",
+        "readme_location": "",
+        "short_desc": ""
+    },
+    "workflows-pipelines": {
+        "dockerhub_target": "docker.io/tapis/workflows-pipelines",
+        "readme_location": "",
+        "short_desc": ""
+    },
+    "img-classify2": {
+        "dockerhub_target": "docker.io/tapis/img-classify2",
+        "readme_location": "",
+        "short_desc": ""
+    },
+    "img-classify-sing": {
+        "dockerhub_target": "docker.io/tapis/img-classify-sing",
+        "readme_location": "",
+        "short_desc": ""
+    },
+    "metawrkr": {
+        "dockerhub_target": "docker.io/tapis/metawrkr",
+        "readme_location": "",
+        "short_desc": ""
+    },
+    "tapis-meta-base": {
+        "dockerhub_target": "docker.io/tapis/tapis-meta-base",
+        "readme_location": "",
+        "short_desc": ""
+    },
+    "flaskbase-fastapi": {
+        "dockerhub_target": "docker.io/tapis/flaskbase-fastapi",
+        "readme_location": "",
+        "short_desc": ""
+    },
+    "systems-migratejob": {
+        "dockerhub_target": "docker.io/tapis/systems-migratejob",
+        "readme_location": "",
+        "short_desc": ""
+    },
+    "pods-api": {
+        "dockerhub_target": "docker.io/tapis/pods-api",
+        "readme_location": "",
+        "short_desc": ""
+    },
+    "metaapi-vdj": {
+        "dockerhub_target": "docker.io/tapis/metaapi-vdj",
+        "readme_location": "",
+        "short_desc": ""
+    },
+    "metawrkr-vdj": {
+        "dockerhub_target": "docker.io/tapis/metawrkr-vdj",
+        "readme_location": "",
+        "short_desc": ""
+    },
+    "registries-api": {
+        "dockerhub_target": "docker.io/tapis/registries-api",
+        "readme_location": "",
+        "short_desc": ""
+    },
+    "pyevents": {
+        "dockerhub_target": "docker.io/tapis/pyevents",
+        "readme_location": "",
+        "short_desc": ""
+    },
+    "opensees-mp": {
+        "dockerhub_target": "docker.io/tapis/opensees-mp",
+        "readme_location": "",
+        "short_desc": ""
+    },
+    "tapisv3-smoketest-app": {
+        "dockerhub_target": "docker.io/tapis/tapisv3-smoketest-app",
+        "readme_location": "",
+        "short_desc": ""
+    },
+    "securityexport": {
+        "dockerhub_target": "docker.io/tapis/securityexport",
+        "readme_location": "",
+        "short_desc": ""
+    },
+    "tapisui": {
+        "dockerhub_target": "docker.io/tapis/tapisui",
+        "readme_location": "",
+        "short_desc": ""
+    },
+    "cloudsec-tapis": {
+        "dockerhub_target": "docker.io/tapis/cloudsec-tapis",
+        "readme_location": "",
+        "short_desc": ""
+    },
+    "cloudsec-tapis-exs": {
+        "dockerhub_target": "docker.io/tapis/cloudsec-tapis-exs",
+        "readme_location": "",
+        "short_desc": ""
+    },
+    "camera_traps_py": {
+        "dockerhub_target": "docker.io/tapis/camera_traps_py",
+        "readme_location": "",
+        "short_desc": ""
+    },
+    "workflow-engine-streams": {
+        "dockerhub_target": "docker.io/tapis/workflow-engine-streams",
+        "readme_location": "",
+        "short_desc": ""
+    },
+    "image_scoring_plugin_py": {
+        "dockerhub_target": "docker.io/tapis/image_scoring_plugin_py",
+        "readme_location": "",
+        "short_desc": ""
+    },
+    "ci-catalog": {
+        "dockerhub_target": "docker.io/tapis/ci-catalog",
+        "readme_location": "",
+        "short_desc": ""
+    },
+    "mpm": {
+        "dockerhub_target": "docker.io/tapis/mpm",
+        "readme_location": "",
+        "short_desc": ""
+    },
+    "centosutil": {
+        "dockerhub_target": "docker.io/tapis/centosutil",
+        "readme_location": "",
+        "short_desc": ""
+    },
+    "stern-fluentd": {
+        "dockerhub_target": "docker.io/tapis/stern-fluentd",
+        "readme_location": "",
+        "short_desc": ""
+    },
+    "ubutil": {
+        "dockerhub_target": "docker.io/tapis/ubutil",
+        "readme_location": "",
+        "short_desc": ""
+    },
+    "skadminutil": {
+        "dockerhub_target": "docker.io/tapis/skadminutil",
+        "readme_location": "",
+        "short_desc": ""
+    },
+    "image_generating_plugin_py": {
+        "dockerhub_target": "docker.io/tapis/image_generating_plugin_py",
+        "readme_location": "",
+        "short_desc": ""
+    },
+    "camera_traps_engine": {
+        "dockerhub_target": "docker.io/tapis/camera_traps_engine",
+        "readme_location": "",
+        "short_desc": ""
+    },
+    "image_scoring_plugin_py_3.8": {
+        "dockerhub_target": "docker.io/tapis/image_scoring_plugin_py_3.8",
+        "readme_location": "",
+        "short_desc": ""
+    },
+    "workflows-python-singularity": {
+        "dockerhub_target": "docker.io/tapis/workflows-python-singularity",
+        "readme_location": "",
+        "short_desc": ""
+    },
+    "testappswrite": {
+        "dockerhub_target": "docker.io/tapis/testappswrite",
+        "readme_location": "",
+        "short_desc": ""
+    },
+    "camera_traps_py_3.8": {
+        "dockerhub_target": "docker.io/tapis/camera_traps_py_3.8",
+        "readme_location": "",
+        "short_desc": ""
+    },
+    "tapisv3-smoketest-app-globus": {
+        "dockerhub_target": "docker.io/tapis/tapisv3-smoketest-app-globus",
+        "readme_location": "",
+        "short_desc": ""
+    },
+    "status-config-builder": {
+        "dockerhub_target": "docker.io/tapis/status-config-builder",
+        "readme_location": "",
+        "short_desc": ""
+    },
+    "sgx3-transform-app": {
+        "dockerhub_target": "docker.io/tapis/sgx3-transform-app",
+        "readme_location": "",
+        "short_desc": ""
+    },
+    "sgx3-transform-app-singularity": {
+        "dockerhub_target": "docker.io/tapis/sgx3-transform-app-singularity",
+        "readme_location": "",
+        "short_desc": ""
+    },
+    "smoketest-globus-app1": {
+        "dockerhub_target": "docker.io/tapis/smoketest-globus-app1",
+        "readme_location": "",
+        "short_desc": ""
+    },
+    "basic-shell-script-app": {
+        "dockerhub_target": "docker.io/tapis/basic-shell-script-app",
+        "readme_location": "",
+        "short_desc": ""
+    },
+    "tapisv3-smoketest-app2": {
+        "dockerhub_target": "docker.io/tapis/tapisv3-smoketest-app2",
+        "readme_location": "",
+        "short_desc": ""
+    },
+    "sentiment-analysis": {
+        "dockerhub_target": "docker.io/tapis/sentiment-analysis",
+        "readme_location": "",
+        "short_desc": ""
+    },
+    "sentiment-analysis-sing": {
+        "dockerhub_target": "docker.io/tapis/sentiment-analysis-sing",
+        "readme_location": "",
+        "short_desc": ""
+    },
+    "sentiment-analysis-scblack": {
+        "dockerhub_target": "docker.io/tapis/sentiment-analysis-scblack",
+        "readme_location": "",
+        "short_desc": ""
+    },
+    "power_measuring_plugin_py": {
+        "dockerhub_target": "docker.io/tapis/power_measuring_plugin_py",
+        "readme_location": "",
+        "short_desc": ""
+    },
+    "power_measuring_plugin.py": {
+        "dockerhub_target": "docker.io/tapis/power_measuring_plugin.py",
+        "readme_location": "",
+        "short_desc": ""
+    },
+    "slurm-sshd": {
+        "dockerhub_target": "docker.io/tapis/slurm-sshd",
+        "readme_location": "",
+        "short_desc": ""
+    },
+    "etl-string-replace-test": {
+        "dockerhub_target": "docker.io/tapis/etl-string-replace-test",
+        "readme_location": "",
+        "short_desc": ""
+    },
+    "etl-sentiment-analysis-test": {
+        "dockerhub_target": "docker.io/tapis/etl-sentiment-analysis-test",
+        "readme_location": "",
+        "short_desc": ""
+    },
+    "stern-logstash": {
+        "dockerhub_target": "docker.io/tapis/stern-logstash",
+        "readme_location": "",
+        "short_desc": ""
+    },
+    "stern-and-cron": {
+        "dockerhub_target": "docker.io/tapis/stern-and-cron",
+        "readme_location": "",
+        "short_desc": ""
+    },
+    "stern-with-timeout": {
+        "dockerhub_target": "docker.io/tapis/stern-with-timeout",
+        "readme_location": "",
+        "short_desc": ""
+    },
+    "image_scoring_plugin_py_nano_3.8": {
+        "dockerhub_target": "docker.io/tapis/image_scoring_plugin_py_nano_3.8",
+        "readme_location": "",
+        "short_desc": ""
+    },
+    "tapisv3-simpletest-app": {
+        "dockerhub_target": "docker.io/tapis/tapisv3-simpletest-app",
+        "readme_location": "",
+        "short_desc": ""
+    },
+    "tms-server-cargo": {
+        "dockerhub_target": "docker.io/tapis/tms-server-cargo",
+        "readme_location": "",
+        "short_desc": ""
+    },
+    "ctcontroller": {
+        "dockerhub_target": "docker.io/tapis/ctcontroller",
+        "readme_location": "",
+        "short_desc": ""
+    },
+    "camera-traps-installer": {
+        "dockerhub_target": "docker.io/tapis/camera-traps-installer",
+        "readme_location": "",
+        "short_desc": ""
+    },
+    "oracle_plugin": {
+        "dockerhub_target": "docker.io/tapis/oracle_plugin",
+        "readme_location": "",
+        "short_desc": ""
+    },
+    "tapisv3-shell-script": {
+        "dockerhub_target": "docker.io/tapis/tapisv3-shell-script",
+        "readme_location": "",
+        "short_desc": ""
+    },
+    "models-api": {
+        "dockerhub_target": "docker.io/tapis/models-api",
+        "readme_location": "",
+        "short_desc": ""
+    },
+    "inference-api": {
+        "dockerhub_target": "docker.io/tapis/inference-api",
+        "readme_location": "",
+        "short_desc": ""
+    },
+    "securityutility": {
+        "dockerhub_target": "docker.io/tapis/securityutility",
+        "readme_location": "",
+        "short_desc": ""
+    },
+    "tapis-files-assigner": {
+        "dockerhub_target": "docker.io/tapis/tapis-files-assigner",
+        "readme_location": "",
+        "short_desc": ""
+    },
+    "tms_server": {
+        "dockerhub_target": "docker.io/tapis/tms_server",
+        "readme_location": "",
+        "short_desc": ""
+    },
+    "training-api": {
+        "dockerhub_target": "docker.io/tapis/training-api",
+        "readme_location": "",
+        "short_desc": ""
+    },
+    "datasets-api": {
+        "dockerhub_target": "docker.io/tapis/datasets-api",
+        "readme_location": "",
+        "short_desc": ""
+    },
+    "aloe-uuidsapi": {
+        "dockerhub_target": "docker.io/tapis/aloe-uuidsapi",
+        "readme_location": "",
+        "short_desc": ""
+    },
+    "aloe-postitsapi": {
+        "dockerhub_target": "docker.io/tapis/aloe-postitsapi",
+        "readme_location": "",
+        "short_desc": ""
+    },
+    "aloe-mongo-client-4.0": {
+        "dockerhub_target": "docker.io/tapis/aloe-mongo-client-4.0",
+        "readme_location": "",
+        "short_desc": ""
+    },
+    "aloe-restheart": {
+        "dockerhub_target": "docker.io/tapis/aloe-restheart",
+        "readme_location": "",
+        "short_desc": ""
+    },
+    "aloe-jobswkr": {
+        "dockerhub_target": "docker.io/tapis/aloe-jobswkr",
+        "readme_location": "",
+        "short_desc": ""
+    },
+    "aloe-jobsrdr-dead": {
+        "dockerhub_target": "docker.io/tapis/aloe-jobsrdr-dead",
+        "readme_location": "",
+        "short_desc": ""
+    },
+    "aloe-jobsrdr-alt": {
+        "dockerhub_target": "docker.io/tapis/aloe-jobsrdr-alt",
+        "readme_location": "",
+        "short_desc": ""
+    },
+    "aloe-jobsrdr-recovery": {
+        "dockerhub_target": "docker.io/tapis/aloe-jobsrdr-recovery",
+        "readme_location": "",
+        "short_desc": ""
+    },
+    "aloe-jobsapi": {
+        "dockerhub_target": "docker.io/tapis/aloe-jobsapi",
+        "readme_location": "",
+        "short_desc": ""
     }
 }
